@@ -1,4 +1,4 @@
-package ScuffedClient.mods.impl;
+package YourClient.mods.impl;
 
 import java.awt.Button;
 
@@ -12,9 +12,6 @@ import ScuffedClient.mods.ModDraggable;
 import ScuffedClient.mods.ModInstances;
 import net.minecraft.client.Minecraft;
 
-//MIGHT WANNA SET YAW AND PITCH TO DEFUALT F5 POS
-//Also get rid of all the extra shit im too tired rn
-//RERITE ALL OF THIS
 public class ModPerspective extends ModDraggable {
 
 	public ModPerspective() {
@@ -29,7 +26,6 @@ public class ModPerspective extends ModDraggable {
 	private static float cameraPitch = 0F;
 	private static int previousPerspective = 0;
 	private static int intt = 0;
-	//private static boolean startat90angle = false;
 	
 	@EventTarget public void onKeyPress(KeyEvent event)
 	{
@@ -92,21 +88,5 @@ public class ModPerspective extends ModDraggable {
 		return false;
 	}
 	
-	
-	@Override
-	public int getWidth() {
-		return 0;
-	}
-
-	@Override
-	public int getHeight() {
-		return 0;
-	}
-
-	@Override
-	public void render(ScreenPosition pos) {}
-	
-	@Override
-	public void onEnable() {}
 
 }
