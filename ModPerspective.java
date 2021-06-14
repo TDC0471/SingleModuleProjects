@@ -1,3 +1,12 @@
+/*
+Copyright TDC
+https://github.com/TDC0471
+
+Orignal made by Tim Kozlov
+https://github.com/Canelex
+*/
+
+
 package YourClient.mods.impl;
 
 import java.awt.Button;
