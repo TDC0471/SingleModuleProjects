@@ -46,16 +46,16 @@ public class ModPerspective extends ModDraggable {
 				previousPerspective = mc.gameSettings.thirdPersonView;
 			}
 			
-			if(!mc.gameSettings.CLIENT_PERSPECTIVE.isKeyDown() && perspectiveToggled) {
-				perspectiveToggled = false;
-				mc.gameSettings.thirdPersonView = previousPerspective;
-			}
-			
 			if(mc.gameSettings.CLIENT_PERSPECTIVE.isKeyDown()) {
 				perspectiveToggled = true;
 				mc.gameSettings.thirdPersonView = 1;
 				cameraYaw = mc.thePlayer.rotationYaw;
 				cameraPitch = mc.thePlayer.rotationPitch;
+			} else if
+			
+			(!mc.gameSettings.CLIENT_PERSPECTIVE.isKeyDown() && perspectiveToggled) {
+				perspectiveToggled = false;
+				mc.gameSettings.thirdPersonView = previousPerspective;
 			}
 			
 
